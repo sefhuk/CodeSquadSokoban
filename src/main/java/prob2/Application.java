@@ -32,4 +32,22 @@ public class Application {
 
         return str;
     }
+
+    /**
+     * 사용자가 입력한 맵 정보를 스테이지 별로 분리하는 함수
+     *
+     * @param input 사용자가 입력한 맵 정보 문자열
+     * @return 스테이지 순서대로 각 정보 문자열을 담은 List
+     */
+    public static List<String> tokenize(String input) {
+
+        List<String> list = new ArrayList<>();
+
+        String[] a = input.split("=====\n");
+        for (String i : a) {
+            list.add(i);
+        }
+
+        return list;
+    }
 }
