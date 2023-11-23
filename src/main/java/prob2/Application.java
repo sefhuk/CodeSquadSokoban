@@ -50,4 +50,22 @@ public class Application {
 
         return list;
     }
+
+    /**
+     * 맵 정보에 따른 Stage 객체를 생성하는 함수
+     *
+     * @param tokens 맵 정보 문자열의 토큰들이 담긴 List
+     * @return 각 맵에 대한 Stage 객체를 가진 List
+     */
+    public static List<Stage> generateStage(List<String> tokens) {
+
+        List<Stage> stageList = new ArrayList<>();
+
+        for (int i = 0; i < tokens.size(); i++) {
+            Stage stage = new Stage(tokens.get(i), i + 1);
+            stageList.add(stage);
+        }
+
+        return stageList;
+    }
 }
