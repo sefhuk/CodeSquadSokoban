@@ -68,4 +68,11 @@ public class Application {
 
         return stageList;
     }
+
+    public static void main(String[] args) {
+
+        for (Stage s : generateStage(tokenize(getInput()))) {
+            s.printStage();
+        }
+    }
 }
