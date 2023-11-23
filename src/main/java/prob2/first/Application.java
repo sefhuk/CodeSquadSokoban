@@ -1,4 +1,4 @@
-package prob2;
+package prob2.first;
 
 import java.util.*;
 
