@@ -62,6 +62,20 @@ public class Stage {
 
         this.byteMap = byteMap;
         this.rowSize = rowSize;
+    }
 
+    /**
+     * 맵 내용을 출력하는 함수
+     */
+    public void printStage() {
+
+        System.out.println("Stage " + this.stageNum + "\n");
+        System.out.println(this.originMap);
+        System.out.println("가로크기: " + this.colSize);
+        System.out.println("세로크기: " + this.rowSize);
+        System.out.println("구멍의 수: " + this.hallCount);
+        System.out.println("공의 수: " + this.ballCount);
+        System.out.println("플레이어의 위치: " + this.player[0] + "행 "
+                + player[1] + "열\n");
     }
 }
